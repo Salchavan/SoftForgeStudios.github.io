@@ -7,117 +7,52 @@
     <title>SoftForge Studios</title>
     <link rel="shortcut icon" href="resources\logo.ico">
     <!-- CSS -->
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">    
+    <link rel="stylesheet" href="resources\fonts\fonts.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href=""><img src="resources\logo.png" alt="SoftForge Studios Logo"></a>
-        <nav>
-            <ul>
-                <li><a href="#section_whatWeDo">¿Que sacemos?</a></li> 
-                <li><a href="#section_whoWeAre">¿Quienes somos?</a></li> 
-                <li><a href="orders\ordersform.html" target="_blank">Realizar un encargo</a></li>
-                <li><a href="#section_proyects">Proyectos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="section_head">
-            <h1>SoftForge Studios</h1>
-            <p>Somos una empresa innovadora especializada en el desarrollo de software. Actualmente, ofrecemos servicios de desarrollo web y creación de videojuegos utilizando Godot.</p>
-        </section>
-        <section id="section_whatWeDo">
-            <h2>¿Que hacemos?</h2>
-            <p>En SoftForge Studios , somos expertos en transformar tus ideas en realidad digital. Ofrecemos una amplia variedad de servicios de desarrollo de software, con un enfoque en dos áreas principales:</p>
-            <ul>
-                <li>
-                    <h3>Desarrollo web</h3>
-                    <p>Esto incluye el diseño, desarrollo y pulido de una pagina web</p>
-                </li>
-            </ul>
-        </section>
-        <section id="section_whoWeAre">
-            <section>
-                <h2>¿Quienes somos?</h2>
-                <p></p> <!-- ! fill -->
-            </section>
-            <section>
-                <h3>Nuestro equipo</h3>
-                <p>Nuestro equipo está liderado por Salvador Castellanos y Bruno Ibarra, dos apasionados por la tecnología con un compromiso firme en brindar soluciones de alta calidad.</p>
-                <div> <!-- todo: create a slider whit the personal-->
-                    <h3>Salvador Castellanos</h3>
-                    <section>
-                        <h4>Sobre mi</h4>
-                        <p></p> <!-- ! fill -->
-                    </section>
-                    <section>
-                        <h4>Ocupacion</h4>
-                        <ul>
-                            <li>Programador
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>GDScript</li>
-                                </ul>
-                            </li>
-                            <li>Ilustrador
-                                <ul>
-                                    <li>Inkscape</li>
-                                    <li>Photoshop</li>
-                                    <li>Krita</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-                <div>
-                    <h3>Bruno Ibarra</h3>
-                    <section>
-                        <h4>Sobre mi</h4>
-                        <p></p> <!-- ! fill -->
-                    </section>
-                    <section>
-                        <h4>Ocupacion</h4>
-                        <ul>
-                            <li>Diseñador
-                                <ul>
-                                    <li>Logos</li>
-                                    <li>Paginas Web</li>
-                                    <li>Marketing</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-            </section>
-        </section>
-        <section>
-            <h2>Realizar un encargo</h2>
-            <p>Para realizar un encargo pueden enviar un formulario <a href="orders\ordersform.html" target="_blank">Aqui</a> o contactarnos por nuestros medios de <a href="#section_ontact">Contacto</a></p>
-        </section>
-        <section id="section_proyects">
-            <h3>Nuestros proyectos de muestra</h3> <!-- todo: create a slider whit the proyects-->
-            <ul>
-                <li><a href="https://github.com/Salchavan/SoftForgeStudios-Web" target="_blank">Esta pagina Web</a></li>
-                <li><a href="https://salcha-van.itch.io/spaceships-attack" target="_blank">Videojuego: Space Attack</a></li> 
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <section id="section_contact">
-            <h3>Contacto</h3>
-            <ul>
-                <li><a href="mailto:soft.forge.studios@gmail.com" target="_blank">Email</a></li> 
-                <li><a href="" target="_blank">Instagram</a></li> <!-- ! fill -->
-            </ul>
-        </section>
-    </footer>
+    <span id="note"></span>
+    <div class="navbutton">
+        <button class="navbutton__button"><img class="navbutton__button__img --imgu" src="resources\icons\arrow_upward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></button><br>
+        <button class="navbutton__button"><img class="navbutton__button__img --imgd" src="resources\icons\arrow_downward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+    </div>
+    <heeader class="header__section --wwd">
+        <h1 class="header__h1">Somos<br><span class="h1__span --soft">Soft</span><span class="h1__span --forge">Forge</span><span class="h1__span --studios"> Studios</span></h1>
+        <p class="header__p --slogan">Desarrollo web y Videojuegos, tu visión hecha realidad</p>
+    </heeader>
+    <nav class="nav">
+        <ul class="nav__ul">
+            <li class="nav__li">
+                <a href="#queHacemos" class="nav__a --blue">
+                    <img src="resources\icons\handyman_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="¿Que es lo que hacemos?" class="nav__li__img">¿Que hacemos?</a></li>
+            <li class="nav__li">
+                <a href="#equipo" class="nav__a --red">
+                    <img src="resources\icons\groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="¿Quienes somos?" class="nav__li__img">Nuestro equipo</a></li>
+            <li class="nav__li">
+                <a href="#charge" class="nav__a  --blue">
+                    <img src="resources\icons\shopping_bag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Hacer un pedido" class="nav__li__img">Hacer una pedido</a></li>
+            <li class="nav__li">
+                <a href="#proyects" class="nav__a --red">
+                    <img src="resources\icons\work_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Proyectos" class="nav__li__img">Proyectos</a></li>
+        </ul>
+    </nav>
+    <section class="sectionwwd --section">
+        <div class="section__div --text --wwd">
+            <h2 class="section__div__h2 --wwd">¿Que es lo que hacemos?</h2>
+            <p class="section__div__p --wwd">En SoftForge Studios, creamos sitios web modernos y videojuegos únicos con el motor Godot. Transformamos ideas en soluciones digitales de alta calidad, adaptadas a tus necesidades y diseñadas para sobresalir.</p> 
+            <button class="section__div__button --button"> <img src="resources\icons\info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="">Mas info</button>   
+        </div>
+        <div class="section__div --slider --wwd">
+            <button class="section__div__button --button --button-slider"><img src="resources\icons\autorenew_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="section__div__button__img" alt=""></button>
+            <img src="resources\Trollface.png" alt="" class="section__div__img">
+            <img src="resources\Trollface.png" alt="" class="section__div__img">
+            <img src="resources\Trollface.png" alt="" class="section__div__img">
+        </div>
+    </section>
+    
 </body>
 </html>
