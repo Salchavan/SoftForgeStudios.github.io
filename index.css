@@ -144,6 +144,7 @@ body{
     background-color: #1a1a1a;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 .nav__ul{
     display: flex;
@@ -152,7 +153,7 @@ body{
 }
 .nav__li{
     display: inline-block;
-    margin: 10px;
+    margin: .75vw;
     box-sizing: content-box;
     list-style: none
 }
@@ -162,10 +163,10 @@ body{
     color: #eee;
     text-decoration: none;
     background-color: #333;
-    padding: 10px;
+    padding: 1vw;
     align-items: center; 
-    font-size: 18px;
-    border-radius: 30px;
+    font-size: 1.5vw;
+    border-radius: 2.5vw;
     transition: 
         background-color .2s,
         outline .2s,
@@ -178,7 +179,7 @@ body{
     color: #f0afaf;
     background-color: #4c4244;
     outline: #e83f6d 1px solid;
-    border-radius: 5px;
+    border-radius: .5vw;
     box-shadow: 0 0 20px #e83f6d;
     transition: 
         background-color .2s,
@@ -192,7 +193,7 @@ body{
     color: #afbbf0;
     background-color: #42444c;
     outline: #663fe8 1px solid;
-    border-radius: 5px;
+    border-radius: .5vw;
     box-shadow: 0 0 20px #663fe8;
     transition: 
         background-color .2s,
@@ -203,8 +204,8 @@ body{
     transform: scale(1.1);
 }
 .nav__li__img{
-    height: 25px;
-    margin: 0 10px 0 0;
+    height: 1.5vw;
+    margin: 0 1vw 0 0;
     pointer-events: none;
 }
 
@@ -287,7 +288,7 @@ body{
 
 
 /* CONTENT ---------------------------------------------------- */
-/* SECTIONWWD ---------------------------------------------------- */
+/* SECTIONWWD --LEFT ---------------------------------------------------- */
 .section__div__h2{
     color: #eee;
     font-size: 4vw;
@@ -323,11 +324,23 @@ body{
 }
 
 /* SECCTION-LEFT IMG ---------------------------------------------------- */
+.--slider{
+    display: flex;
+    position: relative;
+}
+.section__div{
+    overflow: hidden;
+}
 .section__div__img{
-    width: 15vw;
+    width: 40vw;
+    position: absolute;
+    border-radius: 40px;
 }
 
+
 /* SECCTION-RIGHT ---------------------------------------------------- */
+
+
 
 /* FOOTER ---------------------------------------------------- */
 .footer{
