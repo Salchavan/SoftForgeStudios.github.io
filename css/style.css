@@ -20,77 +20,37 @@ body{
     .color-2 {color: #e83f6d;}
 }
 
-
-/* BUTTON-SIMPLE ---------------------------------------------------- */
-.--button-simple{
-    background-color: #555;
-    opacity: 30%;
-    border-radius: 50%;
+/* a-INFO ---------------------------------------------------- */
+.--a-info{
+    background-color: transparent;
     outline: none;
     border: none;
-    box-sizing: border-box;
-    padding: 0.01vw 0vw;
-    user-select: none;
+    box-sizing: content-box;
+    display:inline-block;
+    margin: 0 -1vw 1vw 0;
     transition: 
-        background-color .3s,
-        border-radius .3s,
-        transform .3s;
-    overflow: hidden;
-    height: 2vw;
-    width: 2vw;
+        scale .1s,
+        opacity .1s
 }
-.--button-simple:hover{
-    background-color: #aaa;
-    transform: scale(1.1);
+.--a-info__img{
+    height: 3vw;
+    opacity: 30%;
+}
+.--a-info__img:hover{
+    opacity: .5;
+    scale: 1.1;
     transition: 
-        background-color .3s,
-        border-radius .3s,
-        transform .3s;
+        scale .2s,
+        opacity .2s
 }
-.--button-simple:active{
-    background-color: #fff;
-    transform: scale(1.3);
-}
-.--button-simple__img{
-    pointer-events: none;
-    width: 100%;
-    height: 100%;
+.--a-info__img:active{
+    opacity: 1;
+    scale: 1.5;
+    transition: 
+        scale .2s,
+        opacity .2s
 }
 
-/* BUTTON-INFO ---------------------------------------------------- */
-.--button-info{
-    background-color: #555;
-    opacity: 30%;
-    border-radius: 50%;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
-    padding: 0 .1vw;
-    pointer-events: none;
-    user-select: none;
-    transition: 
-        background-color .3s,
-        border-radius .3s,
-        transform .3s;
-    overflow: hidden;
-}
-.--button-info:hover{
-    background-color: #aaa;
-    transform: scale(1.1);
-    transition: 
-        background-color .3s,
-        border-radius .3s,
-        transform .3s;
-}
-.--button-info:active{
-    background-color: #fff;
-    transform: scale(1.3);
-}
-.--button-info__img{
-    pointer-events: none;
-    width: 5vw;
-    height: 5vw;
-}
 
 
 /* NAVBUTTOM ---------------------------------------------------- */
@@ -203,7 +163,7 @@ body{
         transform .2s;
     transform: scale(1.1);
 }
-.nav__li__img{
+.nav__li__img, i{
     height: 1.5vw;
     margin: 0 1vw 0 0;
     pointer-events: none;
@@ -220,10 +180,10 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.header__h1{
+.header__h1, .section__div__h3 {
     color: #eee;
-    margin: auto;
     width: 70vw;
+    margin: auto;
     font-size: 6vw;
     text-align: center;
     text-transform: uppercase;
@@ -294,20 +254,21 @@ body{
     font-size: 4vw;
     font-style: italic;
     text-transform: uppercase;
-    margin-left: 2vw;
+    margin: 2vw 2vw 0 2vw;
 }
 .--sub{
-    color: #000;
+    color: #1a1a1a;
     text-decoration: underline #eee .5vh;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 1vw ;
-    padding-left: 2vw;
+    margin-left: 2vw;
 }
 .section__div__p{
     color: #eee;
     font-size: 2.5vh;
-    margin: 2vw 5vw 2vw 2vw;
+    margin: 2vw 5vw;
+    text-align: center;
 }
 .--section{
     display: flex;
@@ -317,16 +278,22 @@ body{
     width: 50%;
     margin: 5vw;
 }
+.--text{
+    background-color: #1a1a1a;
+    border-radius: 10%;
+}
 .section__div__button{
     position: relative;
     right: 0;
     left: 90%;
 }
 
+
 /* SECCTION-LEFT IMG ---------------------------------------------------- */
 .--slider{
     display: flex;
     position: relative;
+    align-items: center;
 }
 .section__div{
     overflow: hidden;
@@ -363,6 +330,6 @@ body{
     margin: 1vw;
     list-style: none;
 }
-.footer__ul__li__h3{
+.footer__ul__li{
     font-size: 2vw;
 }

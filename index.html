@@ -1,111 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <!-- OTROS -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>SoftForge Studios</title>
-    <link rel="shortcut icon" href="resources\logo.ico">
-    <!-- CSS -->
-    <link rel="stylesheet" href="index.css">    
-    <link rel="stylesheet" href="resources\fonts\fonts.css">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <!-- OTROS -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= , initial-scale=1.0">
+        <title>SoftForge Studios</title>
+        <link rel="shortcut icon" href="./resources/logo.ico">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">    
+        <link rel="stylesheet" href="./css/wwd.css">    
+        <link rel="stylesheet" href="./resources/fonts/fonts.css">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- SCRIPTS -->
+        <script src="https://kit.fontawesome.com/a0c2756bbd.js" crossorigin="anonymous"></script>  
+    </head>
 <body>
     <span id="note"></span>
     <div class="navbutton">
-        <button class="navbutton__button"><img class="navbutton__button__img --imgu" src="resources\icons\arrow_upward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></button><br>
-        <button class="navbutton__button"><img class="navbutton__button__img --imgd" src="resources\icons\arrow_downward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+        <button class="navbutton__button" id="btn-up"><img class="navbutton__button__img --imgu" src="./resources/icons/arrow_upward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></button><br>
+        <button class="navbutton__button" id="btn-down"><img class="navbutton__button__img --imgd" src="./resources/icons/arrow_downward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
     </div>
-    <heeader class="header__section --wwd">
+    <header class="header__section --wwd">
         <h1 class="header__h1">Somos<br><span class="h1__span --soft">Soft</span><span class="h1__span --forge">Forge</span><span class="h1__span --studios"> Studios</span></h1>
         <p class="header__p --slogan">Desarrollo web y Videojuegos, tu visión hecha realidad</p>
-    </heeader>
+    </header>
     <nav class="nav">
         <ul class="nav__ul">
             <li class="nav__li">
-                <a href="#wwd" class="nav__a --blue">
-                    <img src="resources\icons\handyman_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="¿Que es lo que hacemos?" class="nav__li__img">¿Que hacemos?</a></li>
+                <a href="#section-1" class="nav__a --blue">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    ¿Que hacemos?
+                </a>
+            </li>
             <li class="nav__li">
-                <a href="#equip" class="nav__a --red">
-                    <img src="resources\icons\groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="¿Quienes somos?" class="nav__li__img">Nuestro equipo</a></li>
+                <a href="#section-2" class="nav__a --red">
+                    <i class="fa-solid fa-people-group"></i>
+                    Nuestro equipo
+                </a>
+            </li>
             <li class="nav__li">
-                <a href="#charge" class="nav__a  --blue">
-                    <img src="resources\icons\shopping_bag_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Hacer un pedido" class="nav__li__img">Hacer una pedido</a></li>
+                <a href="#section-3" class="nav__a  --blue">
+                    <i class="fa-solid fa-shop"></i>
+                    Hacer una pedido
+                </a>
+            </li>
             <li class="nav__li">
-                <a href="#proyects" class="nav__a --red">
-                    <img src="resources\icons\work_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Proyectos" class="nav__li__img">Proyectos</a></li>
+                <a href="#section-4" class="nav__a --red">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Proyectos
+                </a>
+            </li>
         </ul>
     </nav>
-    <section class="sectionwwd --section" id="wwd">
+    <section class="sectionwwd --section --section-scroll" id="section-1">
         <div class="section__div --text --wwd">
             <h2 class="section__div__h2 --wwd">¿Que es lo que hacemos?</h2>
             <span class="--sub">Lorem ipsum dolor asdadasdas
             </span>
             <p class="section__div__p --wwd">En SoftForge Studios, creamos sitios web modernos profesionales. Transformamos ideas en soluciones digitales de alta calidad, adaptadas a tus necesidades y diseñadas para sobresalir.</p> 
-            <button class="section__div__button --button-simple"><img src="resources\icons\info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="section__div__button__img --button-simple__img" alt=""></button>
+            <a class="section__div__button --a-info" href="html/whatWeDo.html">
+                <img src="./resources/icons/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="section__div__button__img --a-info__img" alt="">
+            </a>
         </div>
         <div class="section__div --slider --wwd">
-            <img src="resources\pngtree-statue-of-a-man-sitting-and-thinking-picture-image_3101499.jpg" alt="" class="section__div__img --img1">
-            <!-- <img src="resources\Trollface.png" alt="" class="section__div__img --img2">
-            <img src="resources\Trollface.png" alt="" class="section__div__img --img3"> -->
+            <img src="./resources/img/pngtree-statue-of-a-man-sitting-and-thinking-picture-image_3101499.jpg" alt="" class="section__div__img --img1">
+            <!-- <img src="./resources/img/Trollface.png" alt="" class="section__div__img --img2">
+            <img src="./resources/img/Trollface.png" alt="" class="section__div__img --img3"> -->
         </div>
     </section>
-    <section class="sectione --section" id="equip">
+    <section class="sectione --section --section-scroll" id="section-2">
         <div class="section__div --slider --e">
-            <img src="resources\6zTkyqP0n_2000x1500__1.jpg" alt="equip" class="section__div__img --img1">
+            <img src="./resources/img/6zTkyqP0n_2000x1500__1.jpg" alt="equip" class="section__div__img --img1">
         </div>
         <div class="section__div --text --e">
             <h2 class="section__div__h2 --e">Nuestro equipo</h2>
             <span class="--sub">Lorem ipsum dolor asdadasdas
             </span>
             <p class="section__div__p --e">En SoftForge Studios, nuestro equipo está formado por profesionales apasionados por la tecnología y la creatividad. Salvador Castellanos y Juan Cruz Ojeda lideran un grupo diverso y talentoso que combina experiencia en desarrollo web. Dedicándose a ofrecer soluciones innovadoras que superen las expectativas de nuestros clientes.</p> 
-            <button class="section__div__button --button-simple"><img src="resources\icons\info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="section__div__button__img --button-simple__img" alt=""></button>
+            <a class="section__div__button --a-info">
+                <img src="./resources/icons/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="section__div__button__img --a-info__img" alt="">
+            </a>
         </div>
     </section>
-    <section class="sectionc --section" id="proyects">
+    <section class="sectionc --section --section-scroll" id="section-3">
         <div class="section__div --text --p">
             <h2 class="section__div__h2 --p">Proyectos</h2>
             <span class="--sub">Lorem ipsum dolor asdadasdas
             </span>
             <p class="section__div__p --p">En SoftForge Studios, creamos sitios web modernos profesionales. Transformamos ideas en soluciones digitales de alta calidad, adaptadas a tus necesidades y diseñadas para sobresalir.</p> 
-            <button class="section__div__button --button-simple"><img src="resources\icons\info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="section__div__button__img --button-simple__img" alt=""></button>
+            <a class="section__div__button --a-info">
+                <img src="./resources/icons/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="section__div__button__img --a-info__img" alt="">
+            </a>
         </div>
         <div class="section__div --slider --p">
-            <img src="resources\Gestion-proyecto1.webp" alt="" class="section__div__img --img1">
+            <img src="./resources/img/Gestion-proyecto1.webp" alt="" class="section__div__img --img1">
         </div>
     </section>
-    <section class="sectionc --section" id="charge">
+    <section class="sectionc --section --section-scroll" id="section-4">
         <div class="section__div --slider --e">
-            <img src="resources\Blog-Dans-Ton-Style-1.jpg" alt="" class="section__div__img --img1">
+            <img src="./resources/img/Blog-Dans-Ton-Style-1.jpg" alt="" class="section__div__img --img1">
         </div>
         <div class="section__div --text --e">
             <h2 class="section__div__h2 --e">Hacer un pedido</h2>
             <span class="--sub">Lorem ipsum dolor asdadasdas
             </span>
-            <p class="section__div__p --e">Contrata nuestro servicio para la creacion de paginas webs para impulsar tu negocio en la carrera tecnologica</p> 
-            <button class="section__div__button --button-simple"><img src="resources\icons\info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="section__div__button__img --button-simple__img" alt=""></button>
+            <p class="section__div__p --e">Descubre nuestra variedad de proyectos desde sitios web personalizados hasta aplicaciones móviles, de escritorio y videojuegos. Elige lo que necesitas y llévalo a la realidad con nosotros. ¡Haz tu pedido y empecemos a crear!</p> 
+            <a class="section__div__button --a-info">
+                <img src="./resources/icons/info_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="section__div__button__img --a-info__img" alt="">
+            </a>
         </div>
     </section>
     <footer class="footer">
         <h2 class="section__div__h2">Contactanos!</h2>
         <ul class="footer__ul">
             <li class="footer__ul__li --mail">
-                <h3 class="footer__ul__li__h3 --mail">
-                    <a href="">soft.forge.studios@gmail.com</a></h3>
+                <a href="">
+                    <i class="fa-solid fa-envelope"></i>soft.forge.studios@gmail.com
+                </a>
             </li>
             <li class="footer__ul__li --insta">
-                <h3 class="footer__ul__li__h3 --insta">
-                    <a href="">@soft.forge</a></h3>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>@soft.forge
+                </a>
             </li>
             <li class="footer__ul__li --num">
-                <h3 class="footer__ul__li__h3 --num">
-                    <a href="">+54 3525 45-6574</a></h3>
+                <a href="">
+                    <i class="fa-solid fa-phone"></i>+54 3525 45-6574
+                </a>
             </li>
         </ul>
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/btnNavigation.js"></script>
+
 </body>
 </html>
