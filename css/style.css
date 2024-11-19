@@ -19,6 +19,9 @@ body{
     .color-1 {color: #663fe8;}
     .color-2 {color: #e83f6d;}
 }
+.--hidden{
+    display: none;
+}
 
 /* a-INFO ---------------------------------------------------- */
 .--a-info{
@@ -26,7 +29,7 @@ body{
     outline: none;
     border: none;
     box-sizing: content-box;
-    display:inline-block;
+    display: inline-block;
     margin: 0 -1vw 1vw 0;
     transition: 
         scale .1s,
@@ -275,7 +278,8 @@ body{
     width: 100%;
 }
 .section__div{
-    width: 50%;
+    width: 90%;
+    height: auto;
     margin: 5vw;
 }
 .--text{
@@ -294,13 +298,14 @@ body{
     display: flex;
     position: relative;
     align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
 }
 .section__div{
     overflow: hidden;
 }
 .section__div__img{
-    width: 40vw;
-    position: absolute;
+    width: 90vw;
     border-radius: 40px;
 }
 
@@ -333,3 +338,5 @@ body{
 .footer__ul__li{
     font-size: 2vw;
 }
+
+

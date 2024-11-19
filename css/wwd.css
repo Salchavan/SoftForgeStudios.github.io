@@ -10,3 +10,12 @@
 .--left{
     justify-self: left;
 }
+
+
+@media screen and (max-width: 730px){
+    .header__h1{
+        font-size: 33vh;
+    }
+
+
+}

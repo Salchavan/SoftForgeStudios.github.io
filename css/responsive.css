@@ -1,0 +1,56 @@
+
+
+
+
+
+/* RESPOSIVE */
+@media screen and (max-width: 730px){
+    .header__h1{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 13vw;
+    }
+    .h1__span{
+        font-size: 14vw;
+    }
+    .header__p{
+        font-size: 5vw;
+        margin: 7.5vh auto;
+        width: 80vw;
+    }
+    .--section{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .nav{
+        display: none;
+    }
+    .section__div{
+        width: 90%;
+    }
+    .section__div__h2{
+        font-size: 7vw;
+    }
+    .--slider{
+        height: 50%;
+    }
+    .navbutton__button{
+        height: 10vw;
+        width: 10vw;
+    }
+    .navbutton__button__img{
+        height: 10vw;
+        width: 10vw;
+    }
+    .section__div__button__img{
+        height: 10vw;
+        width: 10vw;
+        margin: 0 5vw 5vw 0;
+    }
+    .--a-info__img{
+        height: 10vw;
+        width: 10vw;
+    }
+}
